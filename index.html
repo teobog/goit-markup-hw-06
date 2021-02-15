@@ -306,10 +306,45 @@
     </div>
 </footer>
 <div class="modal is-hidden" data-modal>
-    <div class="modal-screen" >
+    <div class="modal-screen">
         <button class="close-btn" data-modal-close>
-            <img src="./img/close_icon.svg" alt="">
+            <svg>
+                <use href="./img/close_icon.svg#close_icon"></use>
+            </svg>
         </button>
+        <h3>Оставьте свои данные, мы вам перезвоним</h3>
+        <form class="application">
+            <label for="name_input">Имя</label>
+            <div class="icon-input">
+                <input type="text" id="name_input" class="input-style" name="name">
+                <svg class="person_svg">
+                    <use href="./img/person.svg#test"></use>
+                </svg>
+            </div>
+            <label for="phone_input">Телефон</label>
+            <div class="icon-input">
+                <input type="text" id="phone_input" class="input-style" name="phone">
+                <svg class="phone_svg">
+                    <use href="./img/phone.svg#phone_svg"></use>
+                </svg>
+            </div>
+            <label for="mail_input">Почта</label>
+            <div class="icon-input">
+                <input type="text" id="mail_input" class="input-style" name="mail">
+                <svg class="mail_svg">
+                    <use href="./img/mail.svg#mail_svg"></use>
+                </svg>
+            </div>
+            <label for="comment_input">Комментарий</label>
+            <div class="icon-input">
+                <textarea name="comment" id="comment_input" placeholder="Введите текст"></textarea>
+            </div>
+            <div class="policy">
+                <input type="checkbox" name="policy">Соглашаюсь с рассылкой и принимаю
+                <a href="" class="policy_link">Условия договора</a>
+            </div>
+            <button class="send_form">Отправить</button>
+        </form>
     </div>
 </div>
 
