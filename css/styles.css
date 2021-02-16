@@ -597,12 +597,12 @@ footer{
     margin-left: 70px;
     text-transform: uppercase;
     color: #ffffff;
-    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     padding-top: 9px;
 }
 .connect h3{
+    font-size: 14px;
     margin-bottom: 20px;
 }
 .footer-social-link{
@@ -748,6 +748,7 @@ label{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: 250ms border-color cubic-bezier(0.4,0,0.2,1);
+    padding-left: 42px;
 
 }
 .input-style + svg{
@@ -773,9 +774,6 @@ label{
 .mail_svg{
     width: 15px;
     height: 12px;
-}
-input[type="text"]{
-    padding-left: 42px;
 }
 input, textarea{
     outline: none;
@@ -830,4 +828,85 @@ input[name=policy]{
 }
 .send_form:focus{
     outline: none;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.check-label{
+    position: relative;
+    padding-left: 25px;
+}
+.check-label:before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    left: 0;
+}
+.check:checked + .check-label:before{
+    background-color: var(--accent-color);
+    background-image: url("../img/checkmark.svg");
+    border-color: var(--accent-color);
+}
+.check:focus + .check-label:before{
+    border-color: var(--accent-color);
+}
+.mail-footer-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 0 15px 16px;
+}
+.footer-subscribe{
+    padding: 0;
+}
+.subscribe{
+    margin-left: 95px;
+}
+.subscribe h3{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 9px;
+    padding-bottom: 20px;
+}
+.mail-footer-btn{
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: left;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    position: relative;
+    padding-left: 29px;
+}
+.mail-footer-btn svg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    fill: #FFFFFF;
+    padding-left: 10px;
 }
